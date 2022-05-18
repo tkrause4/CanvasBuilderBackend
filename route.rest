@@ -1,0 +1,39 @@
+GET http://localhost:3000/CanvasBuilderDB
+
+###
+
+GET http://localhost:3000/CanvasBuilderDB/627ce2d136ebbe6d603cb55b
+
+###
+
+POST http://localhost:3000/CanvasBuilderDB
+Content-Type: application/json
+
+{
+    "name": "Buisness Model Canvas",
+    "tiles": "9",
+    "type": "Canvas",
+    "Tile": [
+        "text: 'Key Partners', cols: 2, rows: 4, color: 'white'",
+        "text: 'Key Activities', cols: 2, rows: 2, color: 'white'",
+        "text: 'Value Proposition', cols: 2, rows: 4, color: 'white'",
+        "text: 'Customers Relationships', cols: 2, rows: 2, color: 'white'",
+        "text: 'Customer Segments', cols: 2, rows: 4, color: 'white'",
+        "text: 'Key Ressources', cols: 2, rows: 2, color: 'white'",
+        "text: 'Channels', cols: 2, rows: 2, color: 'white'",
+        "text: 'Cost Structure', cols: 5, rows: 2, color: 'white'",
+        "text: 'Revenue Streams', cols: 5, rows: 2, color: 'white'"
+    ]
+}
+
+###
+DELETE http://localhost:3000/CanvasBuilderDB/627e497ac69ad78c84c719e2
+
+###
+
+PATCH http://localhost:3000/CanvasBuilderDB/627e34472ac1e1fef0e8fcbd
+Content-Type: application/json
+
+{
+    "name": "Buisness Model Canvas"
+}
