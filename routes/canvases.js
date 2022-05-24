@@ -32,28 +32,19 @@ router.get('/:id', getCanvas, (req, res) => {
 
 // Create Canvas
 router.post('/', async (req, res) => {
-    upload (req, res, async (error) => {
-        if (error){
-            console.log(error)
-        } else {
-            const canvases = new Canvases({
-                name: req.body.name,
-                tiles: req.body.tiles,
-                type: req.body.type,
-                image: {
-                    data: req.file.filename,
-                    contentType: 'image/png'
-                },
-                Tile: req.body.Tile
-            })
-            try {
-                const newCanvas = await canvases.save()
-                res.status(201).json(newCanvas)
-            } catch (error) {
-                res.status(400).json({message: error.message})
-            }
-        }
+    const canvases = new Canvases({
+        name: req.body.name,
+        tiles: req.body.tiles,
+        type: req.body.type,
+        imagename: req.body.imagename,
+        Tile: req.body.Tile
     })
+    try {
+        const newCanvas = await canvases.save()
+        res.status(201).json(newCanvas)
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
 })
 
 // Delete Canvas
@@ -76,6 +67,9 @@ router.patch('/:id', getCanvas, async (req, res) => {
     }
     if (req.body.type != null) {
         res.canvas.type = req.body.type
+    }
+    if (req.body.imagename != null) {
+        res.templates.imagename
     }
     if (req.body.Tile != null) {
         res.canvas.Tile = req.body.Tile

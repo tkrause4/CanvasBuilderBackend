@@ -32,28 +32,19 @@ router.get('/:id', getTemplate, (req, res) => {
 
 // Create Template
 router.post('/', async (req, res) => {
-    upload (req, res, async (error) => {
-        if (error){
-            console.log(error)
-        } else {
-            const templates = new Templates({
-                name: req.body.name,
-                tiles: req.body.tiles,
-                type: req.body.type,
-                image: {
-                    data: req.file.filename,
-                    contentType: 'image/png'
-                },
-                Tile: req.body.Tile
-            })
-            try {
-                const newTemplate = await templates.save()
-                res.status(201).json(newTemplate)
-            } catch (error) {
-                res.status(400).json({message: error.message})
-            }
-        }
+    const templates = new Templates({
+        name: req.body.name,
+        tiles: req.body.tiles,
+        type: req.body.type,
+        imagename: req.body.imagename,
+        Tile: req.body.Tile
     })
+    try {
+        const newTemplate = await templates.save()
+        res.status(201).json(newTemplate)
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
 })
 
 // Delete Template
@@ -76,6 +67,9 @@ router.patch('/:id', getTemplate, async (req, res) => {
     }
     if (req.body.type != null) {
         res.templates.type = req.body.type
+    }
+    if (req.body.imagename != null) {
+        res.templates.imagename
     }
     if (req.body.Tile != null) {
         res.templates.Tile = req.body.Tile

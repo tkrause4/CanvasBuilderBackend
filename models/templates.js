@@ -13,15 +13,15 @@ const templateSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    image: {
-        data: Buffer,
-        contentType: String,
-        required: false
-    },
-    Tile: [{
+    imagename: {
         type: String,
-        required: false
-    }]
+        required: true
+    },
+    Tile: {
+        type: [
+            "Mixed"
+        ]
+    }
 })
 
 module.exports = mongoose.model('Templates', templateSchema)

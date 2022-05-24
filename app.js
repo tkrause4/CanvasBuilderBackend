@@ -13,7 +13,6 @@ db.once('open', () => console.error('Mit der Datenbank verbunden'))
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static('uploads'))
 
 const canvasRouter = require('./routes/canvases')
 app.use('/canvases', canvasRouter)
