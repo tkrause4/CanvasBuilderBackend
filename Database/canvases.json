@@ -1,0 +1,514 @@
+[{
+  "_id": {
+    "$oid": "628626c472bde9c80d913836"
+  },
+  "name": "Buisness Model Canvas",
+  "tiles": 9,
+  "type": "Canvas",
+  "imagename": "buisness_model_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Key Partners",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Key Activities",
+      "cols": 20,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Value Proposition",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Customers Relationships",
+      "cols": 20,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Customer Segments",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Key Ressources",
+      "cols": 20,
+      "rows": 18,
+      "color": "white"
+    },
+    {
+      "text": "Channels",
+      "cols": 20,
+      "rows": 18,
+      "color": "white"
+    },
+    {
+      "text": "Cost Structure",
+      "cols": 50,
+      "rows": 15,
+      "color": "white"
+    },
+    {
+      "text": "Revenue Streams",
+      "cols": 50,
+      "rows": 15,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286553072bde9c80d91388c"
+  },
+  "name": "Content Strategy Canvas",
+  "tiles": 9,
+  "type": "Canvas",
+  "imagename": "content_strategy_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Audience",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Audit",
+      "cols": 20,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Production",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Formats",
+      "cols": 20,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Distribution",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Brand",
+      "cols": 20,
+      "rows": 18,
+      "color": "white"
+    },
+    {
+      "text": "Workflow",
+      "cols": 20,
+      "rows": 18,
+      "color": "white"
+    },
+    {
+      "text": "Stakeholders",
+      "cols": 50,
+      "rows": 15,
+      "color": "white"
+    },
+    {
+      "text": "Goals",
+      "cols": 50,
+      "rows": 15,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62865c6f72bde9c80d91388f"
+  },
+  "name": "Project Canvas",
+  "tiles": 10,
+  "type": "Canvas",
+  "imagename": "project_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Participants",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Goals",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Users",
+      "cols": 20,
+      "rows": 18,
+      "color": "white"
+    },
+    {
+      "text": "Activities",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "Deliverables",
+      "cols": 20,
+      "rows": 35,
+      "color": "white"
+    },
+    {
+      "text": "User Benefits",
+      "cols": 20,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Risks",
+      "cols": 25,
+      "rows": 15,
+      "color": "white"
+    },
+    {
+      "text": "Milestones",
+      "cols": 25,
+      "rows": 15,
+      "color": "white"
+    },
+    {
+      "text": "Constraints",
+      "cols": 25,
+      "rows": 15,
+      "color": "white"
+    },
+    {
+      "text": "Scope",
+      "cols": 25,
+      "rows": 15,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62875d59e052e17be61fb16b"
+  },
+  "name": "Basic Kanban Canvas",
+  "tiles": 5,
+  "type": "Canvas",
+  "imagename": "basic_kanban_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Task",
+      "cols": 20,
+      "rows": 50,
+      "color": "white"
+    },
+    {
+      "text": "Blocker",
+      "cols": 20,
+      "rows": 50,
+      "color": "white"
+    },
+    {
+      "text": "Work in Progress",
+      "cols": 20,
+      "rows": 50,
+      "color": "white"
+    },
+    {
+      "text": "Done",
+      "cols": 20,
+      "rows": 50,
+      "color": "white"
+    },
+    {
+      "text": "Reviewed",
+      "cols": 20,
+      "rows": 50,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62875f35e052e17be61fb16e"
+  },
+  "name": "4 Quaters Canvas",
+  "tiles": 4,
+  "type": "Canvas",
+  "imagename": "4_quaters_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Q1",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Q2",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Q3",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Q4",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62875fbee052e17be61fb170"
+  },
+  "name": "4L Retrospective Canvas",
+  "tiles": 4,
+  "type": "Canvas",
+  "imagename": "4l_retrospective_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Liked",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Lacked",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Learned",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Longed for",
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62876f7de052e17be61fb191"
+  },
+  "name": "12 Month Canvas",
+  "tiles": 12,
+  "type": "Canvas",
+  "imagename": "12_month_canvas.PNG",
+  "Tile": [
+    {
+      "text": "January",
+      "cols": 16,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Febuary",
+      "cols": 16,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "March",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "April",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "May",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "June",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "July",
+      "cols": 16,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "August",
+      "cols": 16,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "September",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "October",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "November",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "December",
+      "cols": 17,
+      "rows": 25,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6287708fe052e17be61fb193"
+  },
+  "name": "Meeting Facilitator Canvas",
+  "tiles": 6,
+  "type": "Canvas",
+  "imagename": "meeting_facilitator_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Purpose",
+      "cols": 25,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Agenda",
+      "cols": 50,
+      "rows": 34,
+      "color": "white"
+    },
+    {
+      "text": "Preparation",
+      "cols": 25,
+      "rows": 34,
+      "color": "white"
+    },
+    {
+      "text": "Contributors",
+      "cols": 25,
+      "rows": 17,
+      "color": "white"
+    },
+    {
+      "text": "Key Points",
+      "cols": 50,
+      "rows": 16,
+      "color": "white"
+    },
+    {
+      "text": "Actions",
+      "cols": 50,
+      "rows": 16,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62877bfce052e17be61fb195"
+  },
+  "name": "Software Testing Canvas",
+  "tiles": 10,
+  "type": "Canvas",
+  "imagename": "software_testing_canvas.PNG",
+  "Tile": [
+    {
+      "text": "Components",
+      "cols": 20,
+      "rows": 20,
+      "color": "white"
+    },
+    {
+      "text": "Checking",
+      "cols": 20,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Basis",
+      "cols": 20,
+      "rows": 30,
+      "color": "white"
+    },
+    {
+      "text": "Manual",
+      "cols": 20,
+      "rows": 20,
+      "color": "white"
+    },
+    {
+      "text": "Connection",
+      "cols": 20,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Features",
+      "cols": 20,
+      "rows": 30,
+      "color": "white"
+    },
+    {
+      "text": "Automated",
+      "cols": 20,
+      "rows": 30,
+      "color": "white"
+    },
+    {
+      "text": "Exploring",
+      "cols": 20,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Configuration",
+      "cols": 20,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "text": "Oracle",
+      "cols": 20,
+      "rows": 20,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+}]
