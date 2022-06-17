@@ -1,19 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Canvases = require('../models/canvases');
-const multer = require('multer');
-
-// Storage
-const Storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, 'uploads')
-    },
-    filename: (req, file, cb) => {
-        cb(null, `CanvasBuilder_${file.originalname}`)
-    }
-});
-
-const upload = multer ({ storage: Storage }).single('image')
 
 // Getting all Canvases
 router.get('/', async (req, res) => {

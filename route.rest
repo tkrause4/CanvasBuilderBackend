@@ -2,7 +2,15 @@ GET http://localhost:3000/canvases
 
 ###
 
-GET http://localhost:3000/CanvasBuilderDB/627ce2d136ebbe6d603cb55b
+GET http://localhost:3000/templates
+
+###
+
+GET http://localhost:3000/canvases/62875f35e052e17be61fb16e
+
+###
+
+GET http://localhost:3000/templates/62a2181947c89b46ee7104ca
 
 ###
 
@@ -29,13 +37,35 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/CanvasBuilderDB/627e497ac69ad78c84c719e2
 
-###
-
-PATCH http://localhost:3000/CanvasBuilderDB/627e34472ac1e1fef0e8fcbd
+POST http://localhost:3000/templates
 Content-Type: application/json
 
 {
-    "name": "Buisness Model Canvas"
+    "name": "3x3 Template",
+    "tiles": 4,
+    "type": "Template",
+    "imagename": "4x4_template.PNG",
+    "Tile": [
+        {"cols": 50, "rows": 25, "color": "white"},
+        {"cols": 50, "rows": 25, "color": "white"},
+        {"cols": 50, "rows": 25, "color": "white"},
+        {"cols": 50, "rows": 25, "color": "white"}
+    ]
+}
+
+###
+DELETE http://localhost:3000/canvases/627e497ac69ad78c84c719e2
+
+###
+
+DELETE http://localhost:3000/templates/62a2135b8f9776269921cf14
+
+###
+
+PATCH http://localhost:3000/templates/62a2181947c89b46ee7104ca
+Content-Type: application/json
+
+{
+    "name": "2x2 Template"
 }

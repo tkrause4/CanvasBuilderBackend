@@ -1,0 +1,2 @@
+mongoimport --host mongo_db --db CanvasBuilderDB --collection canvases --type json --file /canvases.json --jsonArray
+mongoimport --host mongo_db --db CanvasBuilderDB --collection templates --type json --file /templates.json --jsonArray

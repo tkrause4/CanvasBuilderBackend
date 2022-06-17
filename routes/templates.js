@@ -1,19 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Templates = require('../models/templates');
-const multer = require('multer');
-
-// Storage
-const Storage = multer.diskStorage({
-    destination: 'uploads',
-    filename: (req, file, cb) => {
-        cb(null, file.originalname);
-    }
-});
-
-const upload = multer ({
-    storage:Storage
-}).single('image')
 
 // Getting all Templates
 router.get('/', async (req, res) => {
@@ -50,7 +37,7 @@ router.post('/', async (req, res) => {
 // Delete Template
 router.delete('/:id', getTemplate, async (req, res) => {
     try {
-        await res.templates.remove()
+        await res.template.remove()
         res.json({message: 'Template entfernt'} )
     } catch (error) {
         res.status(500).json({message: error.message})
@@ -60,40 +47,40 @@ router.delete('/:id', getTemplate, async (req, res) => {
 // Update Template
 router.patch('/:id', getTemplate, async (req, res) => {
     if (req.body.name != null) {
-        res.templates.name = req.body.name
+        res.template.name = req.body.name
     }
     if (req.body.tiles != null) {
-        res.templates.tiles = req.body.tiles
+        res.template.tiles = req.body.tiles
     }
     if (req.body.type != null) {
-        res.templates.type = req.body.type
+        res.template.type = req.body.type
     }
     if (req.body.imagename != null) {
-        res.templates.imagename
+        res.template.imagename
     }
     if (req.body.Tile != null) {
-        res.templates.Tile = req.body.Tile
+        res.template.Tile = req.body.Tile
     }
     try {
-        const updatedTemplate = await res.templates.save()
-        res.json(updatedCanvas)
+        const updatedTemplate = await res.template.save()
+        res.json(updatedTemplate)
     } catch (error) {
         res.status(400).json({message: error.message})
     }
 })
 
 async function getTemplate (req, res, next) {
-    let templates
+    let template
     try {
-        templates = await Templates.findById(req.params.id)
-        if (templates == null) {
+        template = await Templates.findById(req.params.id)
+        if (template == null) {
             return res.status(404).json({message: 'Cannot find Template'})
         }
     } catch (error) {
         return res.status(500).json({message: error.message})
     }
 
-    res.templates = templates
+    res.template = template
     next()
 }
 

@@ -1,4 +1,8 @@
 FROM mongo:latest
+WORKDIR /jsondata
 
 COPY canvases.json /canvases.json
-CMD mongoimport --host mongo_db --db CanvasBuilderDB --collection canvases --type json --file /canvases.json --jsonArray
+COPY templates.json /templates.json
+COPY seed.sh .
+
+CMD ["sh", "-c", "./seed.sh"]

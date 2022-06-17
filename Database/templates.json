@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "62a2181947c89b46ee7104ca"
+  },
+  "name": "2x2 Template",
+  "tiles": 4,
+  "type": "Template",
+  "imagename": "4x4_template.PNG",
+  "Tile": [
+    {
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    },
+    {
+      "cols": 50,
+      "rows": 25,
+      "color": "white"
+    }
+  ],
+  "__v": 0
+}]
